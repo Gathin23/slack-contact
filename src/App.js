@@ -7,11 +7,9 @@ function App() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  console.log("env url", process.env.REACT_APP_SLACK_WEBHOOK_URL);
   const submitForm = async (e) => {
     e.preventDefault();
-    const webHookURL = process.env.SLACK_WEBHOOK_URL;
-    console.log(webHookURL);
+    const webHookURL = process.env.REACT_APP_SLACK_WEBHOOK_URL;
     const data = {
       text: `NAME: ${name}\n EMAIL: ${email}\n MESSAGE: ${message}`,
     };
