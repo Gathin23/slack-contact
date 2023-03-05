@@ -6,7 +6,8 @@ function App() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const WEB_HOOK_URL='https://hooks.slack.com/services/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';
+  //ADD HOOK ADDRESS
+  const WEB_HOOK_URL='';
 
   const submitForm = async (e) => {
     e.preventDefault();
